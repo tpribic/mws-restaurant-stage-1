@@ -234,7 +234,7 @@ nav h1 a {
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-	width: 90%;
+	width: 100%;
 }
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
@@ -280,9 +280,14 @@ nav h1 a {
 	display: flex;
 	flex-wrap: wrap;
 }
-#restaurants-list{
-	width: 100%;
-}
 #restaurants-list li{
 	display: inline-block;
+	padding: 5px;
+}
+.filter-options{
+	min-height: 150px;
+	text-align: center;
+}
+.filter-options h2{
+	margin-top: 1em;
 }
