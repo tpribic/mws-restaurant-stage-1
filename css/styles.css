@@ -273,3 +273,16 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+/* CUSTOM Tomislav Pribic */
+
+.res_container{
+	display: flex;
+	flex-wrap: wrap;
+}
+#restaurants-list{
+	width: 100%;
+}
+#restaurants-list li{
+	display: inline-block;
+}
