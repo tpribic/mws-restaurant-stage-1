@@ -300,27 +300,14 @@ nav h1 a {
 	}
 }
 
-/* restaurants page */
+/* Restaurants page */
+
+/* Creation of flex wrapper */
 
 .custom_con{
 	display: flex;
 	flex-wrap: wrap;
-	width: 50%;
+	width: 100%;
 }
 
-#restaurant-container, #reviews-container{
-width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-	.inside #map-container {
-
-	}
-	#restaurant-container, #reviews-container {
-
-	}
-}
-
-.inside #map-container {
-
-}
+/* Adjusting the divs for the wrapper to be responsive */
