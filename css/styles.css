@@ -311,3 +311,30 @@ nav h1 a {
 }
 
 /* Adjusting the divs for the wrapper to be responsive */
+
+/* Mobile up to 768px */
+
+@media screen and (max-width: 767px) {
+	.inside header, #breadcrumb{
+		position: relative;
+		display: block;
+		width: 100%;
+	}
+	#breadcrumb{
+		padding: 10px 0 16px;
+	}
+.inside	#map-container{
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 40vh;
+	}
+	.inside #reviews-container, .inside #restaurant-container{
+		position: relative;
+		display: block;
+		width: 100%;
+	}
+	.inside #footer{
+		width: 100%;
+	}
+}
