@@ -310,11 +310,12 @@ nav h1 a {
 	width: 100%;
 }
 
-/* Adjusting the divs for the wrapper to be responsive */
-
 /* Mobile up to 768px */
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
+	p{
+		font-size: 9pt;
+	}
 	.inside header, #breadcrumb{
 		position: relative;
 		display: block;
@@ -348,5 +349,51 @@ nav h1 a {
 	}
 	#restaurant-img{
 		min-width: 100%;
+	}
+}
+
+/* Screens bigger than 768px */
+@media screen and (min-width: 768px) {
+	.inside header, #breadcrumb{
+		position: relative;
+		display: block;
+		box-sizing: border-box;
+		width: 50%;
+	}
+	#breadcrumb{
+		width: 100%;
+		padding: 10px 40px 16px;
+	}
+	.inside	#map-container{
+		position: fixed;
+		max-width: 50%;
+		z-index: 1;
+		height: 100%;
+		top:0;
+	}
+	.inside #reviews-container, .inside #restaurant-container{
+		position: relative;
+		display: block;
+		box-sizing: border-box;
+		width: auto;
+		max-width: 50%;
+	}
+	.inside #restaurant-container{
+		padding: 10px 40px 30px;
+	}
+	.inside #footer{
+		box-sizing: border-box;
+		min-width: 50%;
+		z-index: 2;
+	}
+	#restaurant-name, #reviews-container h2{
+		text-align: center;
+	}
+	#restaurant-img{
+		width: 100%;
+	}
+	#reviews-list li{
+		width: auto;
+		padding: 20px 20px 20px;
 	}
 }
