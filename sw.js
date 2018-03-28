@@ -48,6 +48,8 @@ self.addEventListener('activate', event => {
     );
 });
 
+/* On Network Response Approach */
+
 self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.open('cached-content').then(function(cache) {
