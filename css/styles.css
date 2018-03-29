@@ -309,6 +309,9 @@ nav h1 a {
 	flex-wrap: wrap;
 	width: 100%;
 }
+nav#bread_nav{
+	height: auto;
+}
 
 /* Mobile up to 768px */
 
