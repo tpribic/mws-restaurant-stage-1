@@ -276,6 +276,10 @@ nav h1 a {
 
 /* CUSTOM Tomislav Pribic */
 
+.skip{
+	display: none;
+}
+
 /* Index page */
 
 .res_container{
