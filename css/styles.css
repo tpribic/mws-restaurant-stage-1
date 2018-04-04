@@ -291,6 +291,10 @@ nav h1 a {
 	display: inline-block;
 	padding: 5px;
 }
+#restaurants-list li{
+	text-align: center;
+}
+
 .filter-options{
 	min-height: 150px;
 	text-align: center;
