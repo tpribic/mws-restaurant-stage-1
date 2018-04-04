@@ -287,7 +287,7 @@ height:1px;
 overflow:hidden;
 }
 
-.skip:focus 
+.skip:focus
 {
 position:static;
 width:auto;
@@ -336,9 +336,26 @@ height:auto;
 	height: auto;
 }
 
+.inside #reviews-list li{
+	border-radius: 0 20px 0 20px;
+}
+
+.inside #reviews-list h5{
+	display: inline-block;
+	float: right;
+}
+.inside #reviews-list h4:nth-child(1){
+	display: inline-block;
+}
+
+
 /* Mobile up to 768px */
 
 @media only screen and (max-width: 767px) {
+	.inside #reviews-list h4, h5{
+		margin-top: 20px;
+	}
+
 	p{
 		font-size: 9pt;
 	}
