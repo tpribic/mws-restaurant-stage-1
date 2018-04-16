@@ -134,7 +134,6 @@ createReviewHTML = (review) => {
   comments.innerHTML = review.comments;
   li.appendChild(comments);
 
-  li.tabIndex = 0;
   return li;
 }
 
@@ -162,4 +161,20 @@ getParameterByName = (name, url) => {
   if (!results[2])
     return '';
   return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+/* Changing Google Maps focus to -1 */
+function customfunction(){
+  let gdivs1 = document.getElementById('map').getElementsByTagName("div");
+  for(var i=0; i<gdivs.length; i++) {
+      gdivs[i].setAttribute("tabindex", "-1");
+  }
+  var gas1 = document.getElementById('map').getElementsByTagName("a");
+  for(let i=0; i<gas.length; i++) {
+      gas[i].setAttribute("tabindex", "-1");
+  }
+  let gbuttons1 = document.getElementById('map').getElementsByTagName("button");
+  for(let i=0; i<gbuttons.length; i++) {
+      gbuttons[i].setAttribute("tabindex", "-1");
+  }
 }
