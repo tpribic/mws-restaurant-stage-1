@@ -12,7 +12,6 @@
   <header>
     <nav role="navigation">
       <h1><a href="/">Restaurant Reviews</a></h1>
-      <a class="skip" href="#neighborhoods-select">Skip the map and go to filter results.</a>
     </nav>
   </header>
 
@@ -54,6 +53,18 @@
       })
       console.log('Service Worker Registered');
       }
+   </script>
+   <script type="text/javascript">
+      # Empty div
+      $map = $('.map')
+
+      # Init Google Map
+      gmap = new google.maps.Map($map[0])
+
+      # Set tabindex on all <a> elements once map has loaded
+      listener = gmap.addListener('tilesloaded', =>
+      $map.find('a').attr('tabindex', 999)
+      google.maps.event.removeListener(listener)
    </script>
 </body>
 <!-- Test -->

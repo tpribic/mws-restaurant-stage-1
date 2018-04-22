@@ -193,4 +193,6 @@ function customfunction(){
   for(let i=0; i<gbuttons.length; i++) {
       gbuttons[i].setAttribute("tabindex", "-1");
   }
+  let gmap = document.getElementById('map').getElementsByTagName('iframe');
+  gmap[0].setAttribute("tabindex", "-1");
 }
