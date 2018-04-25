@@ -10,7 +10,7 @@
   <title>Restaurant Info</title>
 </head>
 
-<body class="inside" onload="customfunction()">
+<body class="inside" onload="customfunction();">
   <!-- Wrapping all content into the flex container -->
   <div class="custom_con">
     <!-- Beginning header -->
@@ -56,7 +56,6 @@
       <!-- End reviews -->
     </main>
     <!-- End main -->
-
     <!-- Beginning footer -->
       <footer id="footer">
         Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
@@ -71,6 +70,7 @@
   <script type="text/javascript" src="js/restaurant_info.js"></script>
   <!-- Google Maps -->
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBU0oUUu0YIsn9tKUjMZC98Bz6GXVYsYnY&libraries=places&callback=initMap"></script>
+  <script type="text/javascript" src="js/focusfix.js"></script>
   <!-- SW Registration -->
   <script>
   if ('serviceWorker' in navigator) {
@@ -79,7 +79,7 @@
       })
       console.log('Service Worker Registered');
       }
-   </script>
+  </script>
   <!-- End scripts -->
 
 </body>
